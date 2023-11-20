@@ -229,7 +229,7 @@ input[name="r"]{
 	footer {
     text-align: center;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 900px;
     background: linear-gradient(to bottom, #0000FF);
     color: #fff;
     padding: 20px 0;
@@ -243,7 +243,7 @@ input[name="r"]{
 		}
 		footer p {
 			margin: 0;
-			width: 100%;
+			width: 800px;
 			background-color: rgba(0, 0, 0, 0.5); 
 			padding: 10px; 
 		}
