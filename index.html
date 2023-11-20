@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Назва -->
+     <title class="translatable" data-original-text="Мій тестовий сайт">Мій тестовий сайт</title>
+    
+</head>
+<body class="main">
+	<!-- Змінення мови, значки -->
+    <div class="language-switcher">
+        <img src="Png\ukrainian.png" onclick="changeLanguage('uk')">
+        <img src="Png\english.png" onclick="changeLanguage('en')">
+</div>
+
+	<!-- Шапка -->
+<header class="header-container">
+    <div class="logo">
+        <!-- Мій логотип-->
+        <img src="Gif\Logo1.gif" alt="логотип">
+    </div>
+    <h1 class="neon-text translatable" data-original-text="Україна починається з тебе!">Україна починається з тебе!</h1>
+</header>
+
+<div class="container" id="1">
+           <!-- Перший ряд -->
+<div class="image-container">
+    <a href="Page2.html">
+        <img class="image" src="JPG\chornovil (1).jpg" alt="Фото">
+        <div class="text-overlay">
+            <a href="Page2.html" class="translatable" data-original-text="Людина, що змінила хід історії">Людина, що змінила хід історії</a>
+        </div>
+    </a>
+</div>
+
+<div class="image-container">
+    <a href="Page3.html">
+        <img class="image" src="JPG\Uk1.jpg" alt="Фото">
+        <div class="text-overlay">
+            <a href="Page3.html" class="translatable" data-original-text="Україна - моя Батьківщина">Україна - моя Батьківщина</a>
+        </div>
+    </a>
+</div>
+            <!-- Другий ряд -->
+            <div class="image-container">
+                <a href="Page4.html">
+                    <img class="image" src="JPG\Geroj1.jpg" alt="Фото">
+                    <div class="text-overlay">
+                        <a href="Page4.html" class="translatable" data-original-text="Маленьки Герої України">Маленьки Герої України</a>
+                    </div>
+                </a>
+            </div>
+
+       <div class="image-container" >
+			<video id="video-player" controls>
+            <source src="Тартак — Висота _ Ніхто Крім Нас.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+			</video>
+			<img class="image" src="JPG\Geroj2.jpg" alt="Background Image">
+			<div class="text-overlay"onclick="playVideo()">
+			<a class="translatable" data-original-text="Ніхто Крім Нас">Ніхто Крім Нас</a>
+            </div>
+		</div>
+
+</div>
+
+   		<!-- блок навігації -->
+<div class="navigation">
+    <div class="navigation-header" onclick="toggleNavigation()">
+    <img src="Png/icon.png" alt="Navigation Icon">
+    <a class="translatable" data-original-text="Навігація">Навігація</a>
+</div>
+    <ul class="navigation-list">
+        <li><img src="Png/gerb.png" style="width: 30px; height: 30px; margin-right: 10px;"><a href="#1" class="translatable" data-original-text="Головне">Головне</a></li>
+        <li><img src="Png/gerb.png"  style="width: 30px; height: 30px; margin-right: 10px;"><a href="#2" class="translatable" data-original-text="Слайдер">Слайдер</a></li>
+        <li><img src="Png/gerb.png"  style="width: 30px; height: 30px; margin-right: 10px;"><a href="#email-link" class="translatable" data-original-text="Контакти">Контакти</a></li>
+        <li><img src="Png/gerb.png"  style="width: 30px; height: 30px; margin-right: 10px;"><a href="Page1.html" class="translatable" data-original-text="Про нас">Про нас</a></li>
+    </ul>
+</div>
+
+	<div class="slider middle" id="2">
+    <div class="slides">
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+        <input type="radio" name="r" id="r5">
+        <input type="radio" name="r" id="r6">
+        <input type="radio" name="r" id="r7">
+        <input type="radio" name="r" id="r8">
+        <input type="radio" name="r" id="r9">
+        <input type="radio" name="r" id="r10">
+
+        <div class="slide s1"><img src="JPG/Slajd1.jpg" alt=""></div>
+        <div class="slide"><img src="JPG/Slajd2.jpg" alt=""></div>
+        <div class="slide"><img src="JPG/Slajd3.jpg" alt=""></div>
+        <div class="slide"><img src="JPG/Slajd4.jpg" alt=""></div>
+        <div class="slide"><img src="JPG/Slajd5.jpg" alt=""></div>
+        <div class="slide"><img src="JPG/Slajd6.jpg" alt=""></div>
+        <div class="slide"><img src="JPG/Slajd7.jpg" alt=""></div>
+        <div class="slide"><img src="JPG/Slajd8.jpg" alt=""></div>
+        <div class="slide"><img src="JPG/Slajd9.jpg" alt=""></div>
+        <div class="slide"><img src="JPG/Slajd10.jpg" alt=""></div>
+       
+    </div>
+
+     <div class="navigation slider-navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+        <label for="r5" class="bar"></label>
+        <label for="r6" class="bar"></label>
+        <label for="r7" class="bar"></label>
+        <label for="r8" class="bar"></label>
+        <label for="r9" class="bar"></label>
+        <label for="r10" class="bar"></label>
+    </div>
+</div>
+<footer>
+    <!-- QR-коди з силками -->
+    <div class="qr-code" id="qr-code-instagram">
+        <a href="https://instagram.com/cyberpc.bodya?utm_source=qr">
+            <img src="Png\Instagram.png" alt="https://instagram.com/cyberpc.bodya?utm_source=qr">
+        </a>
+    </div>
+
+    <div class="qr-code" id="qr-code-telegram">
+        <a href="https://t.me/CyberPC_Bodya">
+            <img src="Png\Telegram.png" alt="QR-код 2">
+        </a>
+    </div>
+    <!-- Пошта -->
+    <p class="translatable" id="email-link" data-original-text="Пошта: bodya.cyberpc@gmail.com">Пошта: bodya.cyberpc@gmail.com</p>
+    <!-- Копірайт і інша інфа про сайт -->
+    <p class="translatable" data-original-text="Ваша компанія. Всі права захищені.">&copy; 2023 Ваша компанія. Всі права захищені.</p>
+</footer>
+
+<script src="home-script.js"></script>
+</body>
+</html>
