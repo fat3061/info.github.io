@@ -128,28 +128,3 @@ function changeLanguage(language) {
             video.style.display = 'block';
             video.play();
         }
-var player;
-
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('video-player', {
-            events: {
-                'onReady': onPlayerReady,
-                'onStateChange': onPlayerStateChange
-            }
-        });
-    }
-
-    function onPlayerReady(event) {
-        // This function is called when the video is ready to play
-        console.log('Player is ready');
-    }
-
-    function onPlayerStateChange(event) {
-        // This function is called when the video's state changes (play, pause, end, etc.)
-        console.log('Player state has changed:', event.data);
-    }
-
-    function playVideo() {
-        player.playVideo();
-    }
-		
